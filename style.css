@@ -1,0 +1,17 @@
+.myapp-list-item-right-column {
+	text-align: right;
+	float: right;
+	display: inline;
+	width: 44%;
+}
+.myapp-list-item-left-column {
+	text-align: left;
+	/*float: left;*/
+	display: inline;
+	width: 56%;
+}
+.myapp-center-align{
+	width: 70%; 
+	margin-left: auto; 
+	margin-right: auto;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.css" />
+        <link rel="stylesheet" href="style.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>ListApp</title>
+    </head>
+    <body>
+    	<div data-role="page" id="home">
+		    <div id="header" data-role="header">
+		    	<h1>Bigshot Telekom Kompany</h1>
+			</div>    	
+    		<div data-role="main" class="ui-content">
+				Welcome!
+			</div>
+			<footer data-role="footer" data-position="fixed">
+			    <nav data-role="navbar">
+			        <ul>
+			            <li><a href="#home" data-icon="home">Home</a></li>
+			            <li><a href="#billing" data-icon="grid">Billing</a></li>
+			            <li><a href="#ticket" data-icon="info">Open a Ticket</a></li>
+			        </ul>
+			    </nav>
+			</footer>
+		</div>
+    	<div data-role="page" id="billing">
+		    <div id="header" data-role="header">
+		    	<h1>Bigshot Telekom Kompany</h1>
+		    	<a href="#home" data-icon="home" data-iconpos="notext"></a>
+			</div>    	
+    		<div data-role="main" class="ui-content">
+				<article data-role="content">
+				    <ul data-role="listview">
+				        <li>
+				            <a href="#payBill">
+				            <h1>Pay Bill</h1>
+				            <img src="img/bill.png" alt="Pay Bill" />
+				            <p>Pay monthly bill here</p>
+				            </a>
+				        </li>
+				        <li>
+				            <a href="#">
+				            <h1>View Bill History</h1>
+				            <img src="img/order-history.png" alt="Bill History" />
+				            <p>Check Bill history for last one year here</p>
+				            </a>
+				        </li>
+				    </ul>
+				</article>
+			</div>
+			<footer data-role="footer" data-position="fixed">
+			    <nav data-role="navbar">
+			        <ul>
+			            <li><a href="#home" data-icon="home">Home</a></li>
+			            <li><a href="#billing" data-icon="grid">Billing</a></li>
+			            <li><a href="#ticket" data-icon="info">Open a Ticket</a></li>
+			        </ul>
+			    </nav>
+			</footer>
+		</div>
+		<div data-role="page" id="ticket">
+		    <div id="header" data-role="header">
+		    	<h1>Bigshot Telekom Kompany</h1>
+		    	<a href="#home" data-icon="home" data-iconpos="notext"></a>
+			</div>
+			<div data-role="main" class="ui-content">
+				<form method="post" action="#" class="myapp-center-align">
+					<select id="colors" name="colors">
+						<option value="red">Choose Issue Type</option>
+				    	<option value="red">Billing</option>
+				    	<option value="green">Technical</option>
+				    	<option value="blue">Other</option>
+				    </select>
+			    	<textarea class="ui-input-text" placeholder="Description"></textarea>
+			    	<input type="submit" value="Submit"/>
+			    </form>
+			</div>
+			<footer data-role="footer" data-position="fixed">
+			    <nav data-role="navbar">
+			        <ul>
+			            <li><a href="#home" data-icon="home">Home</a></li>
+			            <li><a href="#billing" data-icon="grid">Billing</a></li>
+			            <li><a href="#ticket" data-icon="info">Open a Ticket</a></li>
+			        </ul>
+			    </nav>
+			</footer>			
+		</div>
+		<div data-role="page" id="payBill">
+		    <div id="header" data-role="header">
+		    	<h1>Bigshot Telekom Kompany</h1>
+		    	<a href="#billing" data-icon="back" data-iconpos="notext"></a>
+			</div>
+			<div data-role="main" class="myapp-center-align ui-content">
+				<ul data-role="listview">
+					<li>
+							<div class="myapp-list-item-left-column">Bill Amount:</div>
+							<div class="myapp-list-item-right-column">120 INR</div>
+					</li>
+					<li>
+							<div class="myapp-list-item-left-column">Due Date:</div>
+							<div class="myapp-list-item-right-column">21-Jan-2015</div>
+					</li>					
+					<li style="overflow: hidden;">
+							<div class="myapp-list-item-left-column">Partial Payment:</div>
+							<div class="myapp-list-item-right-column">
+								<select name="flip-1" id="flip-1" data-role="slider">
+									<option value="off">Off</option>
+									<option value="on">On</option>
+								</select> 
+							</div>
+					</li>
+					<li>
+						<input type="submit" value="Make Payment"/>
+					</li>
+				</ul>
+			</div>
+			<footer data-role="footer" data-position="fixed">
+			    <nav data-role="navbar">
+			        <ul>
+			            <li><a href="#home" data-icon="home">Home</a></li>
+			            <li><a href="#billing" data-icon="grid">Billing</a></li>
+			            <li><a href="#ticket" data-icon="info">Open a Ticket</a></li>
+			        </ul>
+			    </nav>
+			</footer>						
+		</div>
+    </body>
+</html>
